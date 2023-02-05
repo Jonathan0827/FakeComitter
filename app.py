@@ -6,7 +6,7 @@ fakePath = os.path.dirname(os.path.realpath(__file__))
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
 fakeData = fakeFile.readline()
 fakeFile.close()
-fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'w')
+fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'a')
 print(fakeData)
 while num < int(times):
  fakeFile.write('1')
