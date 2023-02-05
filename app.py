@@ -9,7 +9,6 @@ fakeFile.close()
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'w')
 print(fakeData)
 while num < int(times):
- print('s')
  fakeFile.write('1')
 
  os.chdir(fakePath)
