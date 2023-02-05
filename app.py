@@ -6,7 +6,7 @@ fakeData = fakeFile.readline()
 fakeFile.close()
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
 try:
- fakeFile.write(str(Int(fakeData)+1))
+ fakeFile.write(str(int(fakeData)+1))
 except:
  print('e')
  fakeFile.write(str(1))
