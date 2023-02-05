@@ -9,12 +9,9 @@ fakeFile.close()
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'w')
 print(fakeData)
 while num < int(times):
- try:
-  print('s')
-  fakeFile.write(str(int(fakeData)+1))
- except ValueError:
-  print('e')
-  fakeFile.write(str(1))
+ print('s')
+ fakeFile.write('1')
+
  os.chdir(fakePath)
  os.system('git add .')
  os.system('git commit -m "fake commit"')
