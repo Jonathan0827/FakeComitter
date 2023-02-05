@@ -7,6 +7,7 @@ fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
 fakeData = fakeFile.readline()
 fakeFile.close()
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'w')
+print(fakeData)
 while num < int(times):
  try:
   print('s')
