@@ -6,10 +6,10 @@ fakeData = fakeFile.readline()
 fakeFile.close()
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
 try:
- fakeFile.write(Int(fakeData)+1)
+ fakeFile.write(str(Int(fakeData)+1))
 except:
  print('e')
- fakeFile.write(1)
+ fakeFile.write(str(1))
 os.system('git add .')
 os.system('git commit')
 os.system('git push')
