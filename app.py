@@ -1,6 +1,6 @@
 import os
 os.chdir('/')
-fakePath = os.path.dirname(os.path.realpath(__file__)) )
+fakePath = os.path.dirname(os.path.realpath(__file__))
 fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
 fakeData = fakeFile.readline()
 fakeFile.close()
