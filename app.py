@@ -11,10 +11,11 @@ while num < int(times):
  try:
   print('s')
   fakeFile.write(str(int(fakeData)+1))
- except:
+ except ValueError:
   print('e')
   fakeFile.write(str(1))
  os.chdir(fakePath)
  os.system('git add .')
  os.system('git commit -m "fake commit"')
  os.system('git push')
+ num += 1
