@@ -1,19 +1,19 @@
 import os
-times = input("")
+print('''
+  _____     _         ____                          _ _   _
+ |  ___|_ _| | _____ / ___|___  _ __ ___  _ __ ___ (_) |_| |_ ___ _ __
+ | |_ / _` | |/ / _ \ |   / _ \| '_ ` _ \| '_ ` _ \| | __| __/ _ \ '__|
+ |  _| (_| |   <  __/ |__| (_) | | | | | | | | | | | | |_| ||  __/ |
+ |_|  \__,_|_|\_\___|\____\___/|_| |_| |_|_| |_| |_|_|\__|\__\___|_|
+                            By Jonathan0827
+                                                                       ''')
+times = input("Input: ")
 num = 0
-os.chdir('/')
 fakePath = os.path.dirname(os.path.realpath(__file__))
-fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'r')
-fakeData = fakeFile.readline()
-fakeFile.close()
-print(fakeData)
-while num < int(times):
- fakeFile = open(fakePath+'/fakeFile/fakeFile.txt', 'a')
- fakeFile.write('1')
+os.chdir(fakePath)
 
- os.chdir(fakePath)
- os.system('git add .')
- os.system('git commit -m "fake commit"')
- os.system('git push')
- num += 1
- fakeFile.close()
+while num < int(times):
+    os.system('git commit --allow-empty -m "fake commit"')
+    num += 1
+
+os.system('git push')
