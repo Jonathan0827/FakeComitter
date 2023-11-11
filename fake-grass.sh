@@ -24,7 +24,7 @@ do
     echo $N_DAYS_BEFORE # For test
     
     if [ `expr $day % 2` -eq 1 ]; then
-        echo hsh > fake-commit.txt
+        echo :trollface: > fake-commit.txt
         git add fake-commit.txt
     else
         echo sej > fake-commit.txt
