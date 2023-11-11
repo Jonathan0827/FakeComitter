@@ -1,8 +1,8 @@
-#!/bin/zsh
+#!/bin/bash
 
 
 if [ $# -lt 1 ]; then
-    echo "Usage: ./fake-commit [N]"
+    echo "Usage: ./app.py [N]"
     exit 1
 fi
 
